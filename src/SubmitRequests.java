@@ -37,11 +37,11 @@ public class SubmitRequests implements Runnable {
 
         }
 
-        //Thread t1 = new Thread(new SubmitRequests(primary, "song data 1.csv"));
-        //Thread t2 = new Thread(new SubmitRequests(Secondary, "song data 2.csv"));
+        Thread t1 = new Thread(new SubmitRequests(primary, "top5-1.csv"));
+        Thread t2 = new Thread(new SubmitRequests(Secondary, "top5-2.csv"));
 
-        //t1.start();
-        //t2.start();
+        t1.start();
+        t2.start();
 
     }
 
